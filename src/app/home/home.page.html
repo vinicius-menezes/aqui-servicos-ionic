@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="success">
+        <ion-title>
+            Aqui Serviços
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+
+    <ion-button expand="full" (click)="openWithSystemBrowser('http://www.aquiservicos.com.br/')">Abrir no navegador
+    </ion-button>
+    <!--    <ion-button (click)="openWithInAppBrowser('http://www.aquiservicos.com.br/')">Open with In App browser</ion-button>-->
+    <ion-button expand="full" (click)="openWithCordovaBrowser('http://www.aquiservicos.com.br/')">Abrir internamente
+    </ion-button>
+
 </ion-content>
